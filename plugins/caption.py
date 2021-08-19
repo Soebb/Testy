@@ -26,16 +26,15 @@ async def caption(client, message: Message):
         if Z.__contains__("Fragman"):
             Jn = m.split("Bolum")[1]
             if "2" in Jn:
-                tz += "دوم"
+                tz += "#دوم"
             elif "1" in Jn:
-                tz += "اول"
+                tz += "#اول"
             elif "3" in Jn:
-                tz += "سوم"
+                tz += "#سوم"
             elif "4" in Jn:
-                tz += "چهارم"
+                tz += "#چهارم"
             elif "5" in Jn:
-                tz += "پنجم"
-‌‌‌‌‌‌‌        
+                tz += "#پنجم"
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
