@@ -39,10 +39,9 @@ async def caption(client, message: Message):
             elif "6" in Jn:
                 tz += "#ششم"
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") or X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
-                V = m.split("Bolum")[0]
-                E = V.split(f"{X}", -1)
+                E = m.split("Bolum")[0]
             else:
-                E = " "
+                E = ""
             Tzz = tz.replace("#", " ")
             await message.edit(f"⬇️ تیزر{Tzz} قسمت {E} {fa} بازیرنویس چسبیده\n🆔👉 @dlmacvin_new")
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
