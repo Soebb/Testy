@@ -35,8 +35,7 @@ async def caption(client, message: Message):
                 tz += "چهارم"
             if "5" in Jn:
                 tz += "پنجم"
-‌‌‌‌‌‌‌            if "6" in Jn:
-                tz += "ششم"
+‌‌‌‌‌‌‌        
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
