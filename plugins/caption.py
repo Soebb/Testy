@@ -6,8 +6,8 @@ from pyrogram.errors import FloodWait
 async def caption(client, message: Message):
     media = message.video or message.document
     if (media is not None) and (media.file_name is not None):
-        m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ")
-        D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ")
+        m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ").replace("ı", "i").replace("İ", ").replace("ö", "o").replace("Ö", "O").replace("Ü", "U").replace("ü", "u")
+        D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ").replace("E320", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
         fa = " "
         X = " "
@@ -22,20 +22,20 @@ async def caption(client, message: Message):
             X += "Sibe Mamnooe"
         if media.file_size < 50:
             tz = " "
-            if "Bölüm 2" in m:
+            if "Bolum 2" in m:
                 tz += "دوم"
-            if "Bölüm 1" in m:
+            if "Bolum 1" in m:
                 tz += "اول"
-            if "Bölüm 3" in m:
+            if "Bolum 3" in m:
                 tz += "سوم"
-            if "Bölüm 4" in m:
+            if "Bolum 4" in m:
                 tz += "چهارم"
-            if "Bölüm 5" in m:
+            if "Bolum 5" in m:
                 tz += "پنجم"
-‌‌‌‌‌‌‌            if "Bölüm 6" in m:
+‌‌‌‌‌‌‌            if "Bolum 6" in m:
                 tz += "ششم"
             if not X == " ":
-                V = m.split("Bölüm")[0]
+                V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
             else:
                 E = " "
