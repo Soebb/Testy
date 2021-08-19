@@ -23,25 +23,19 @@ async def caption(client, message: Message):
 
         if media.file_size < 50:
             tz = " "
-            Z = f"{media.file_name}"
-            tt = "m" + " " + "2"
-            if f"{tt}" in Z:
-                tz += 'دوم'
-            yy = "m" + " " + "1"
-            if f"{yy}" in Z:
-                tz += 'اول'
-            uu = "m" + " " + "3"
-            if f"{uu}" in Z:
-                tz += 'سوم'
-            ss = "m" + " " + "4"
-            if f"{ss}" in Z:
-                tz += 'چهارم'
-            jj = "m" + " " + "5"
-            if f"{jj}" in Z:
-                tz += 'پنجم'
-            zz = "m" + " " + "6"
-‌‌‌‌‌‌‌            if f"{zz}" in Z:
-                tz += 'ششم'
+            Z = media.file_name
+            if Z.__contains__("m 2"):
+                tz += "دوم"
+            if Z.__contains__("m 1"):
+                tz += "اول"
+            if Z.__contains__("m 3"):
+                tz += "سوم"
+            if Z.__contains__("m 4"):
+                tz += "چهارم"
+            if Z.__contains__("m 5"):
+                tz += "پنجم"
+‌‌‌‌‌‌‌            if Z.__contains__("m 6"):
+                tz += "ششم"
             if not X == " ":
                 V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
