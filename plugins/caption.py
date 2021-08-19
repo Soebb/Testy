@@ -10,6 +10,7 @@ async def caption(client, message: Message):
         D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ").replace("E320", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
         fa = " "
+        Z = f"{media.file_name}"
         X = " "
         tz = " "
         if "Sen Cal Kapimi" in m:
@@ -23,17 +24,17 @@ async def caption(client, message: Message):
             X += "Sibe Mamnooe"
 
         if media.file_size < 50:
-            if "Bolum 2" in N:
+            if "Bölüm 2" in Z:
                 tz += "دوم"
-            if "Bolum 1" in N:
+            if "Bölüm 1" in Z:
                 tz += "اول"
-            if "Bolum 3" in N:
+            if "Bölüm 3" in Z:
                 tz += "سوم"
-            if "Bolum 4" in N:
+            if "Bölüm 4" in Z:
                 tz += "چهارم"
-            if "Bolum 5" in N:
+            if "Bölüm 5" in Z:
                 tz += "پنجم"
-‌‌‌‌‌‌‌            if "Bolum 6" in N:
+‌‌‌‌‌‌‌            if "Bölüm 6" in Z:
                 tz += "ششم"
             if not X == " ":
                 V = m.split("Bolum")[0]
