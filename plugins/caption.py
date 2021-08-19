@@ -24,17 +24,23 @@ async def caption(client, message: Message):
             X += "Sibe Mamnooe"
 
         if media.file_size < 50:
-            if 'm 2' in Z:
+            tt = "m" + " " + "2"
+            if f"{tt}" in Z:
                 tz += "دوم"
-            if 'm 1' in Z:
+            yy = "m" + " " + "1"
+            if f"{yy}" in Z:
                 tz += "اول"
-            if 'm 3' in Z:
+            uu = "m" + " " + "3"
+            if f"{uu}" in Z:
                 tz += "سوم"
-            if 'm 4' in Z:
+            ss = "m" + " " + "4"
+            if f"{ss}" in Z:
                 tz += "چهارم"
-            if 'm 5' in Z:
+            jj = "m" + " " + "5"
+            if f"{jj}" in Z:
                 tz += "پنجم"
-‌‌‌‌‌‌‌            if 'm 6' in Z:
+            zz = "m" + " " + "6"
+‌‌‌‌‌‌‌            if f"{zz}" in Z:
                 tz += "ششم"
             if not X == " ":
                 V = m.split("Bolum")[0]
