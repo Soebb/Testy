@@ -10,9 +10,9 @@ async def caption(client, message: Message):
         D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ").replace("E320", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
         Z = media.file_name
-        fa = ""
-        X = ""
-        tz = ""
+        fa = " "
+        X = " "
+        tz = " "
 
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
@@ -42,7 +42,7 @@ async def caption(client, message: Message):
                 V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
             else:
-                E = ""
+                E = " "
             Tzz = tz.replace("#", " ")
             await message.edit(f"⬇️ تیزر{Tzz} قسمت {E} {fa} بازیرنویس چسبیده\n🆔👉 @dlmacvin_new")
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
@@ -57,7 +57,7 @@ async def caption(client, message: Message):
             if Q:
                 q = f"\n🔹کیفیت: {Q}"
             else:
-                q = ""
+                q = " "
             if 'E0' in N:
                 O = N.split("E0")[1]
                 T = O.split()[0]
@@ -143,5 +143,5 @@ async def caption(client, message: Message):
                 G = f"\n🔹کیفیت: {Q}"
                 q = G.replace(".1", " ").replace(".mkv", " ")
             else:
-                q = ""
+                q = " "
             await message.edit(f"♨️ فیلم {f} بازیرنویس چسبیده{YR} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
