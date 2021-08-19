@@ -35,7 +35,7 @@ async def caption(client, message: Message):
                 tz += "پنجم"
 ‌‌‌‌‌‌‌            if "Bolum 6" in m:
                 tz += "ششم"
-            if not X == " ":
+            if not "X" == " ":
                 V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
             else:
