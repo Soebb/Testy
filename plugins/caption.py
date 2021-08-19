@@ -9,6 +9,16 @@ async def caption(client, message: Message):
         m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ")
         D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
+        fa = " "
+        if "Sen Cal Kapimi" in m:
+            fa += "#تو_در_خانه_ام_را_بزن"
+
+        if "Marasli" in m:
+            fa += "#اهل_ماراش"
+
+        if "Sibe Mamnooe" in m:
+            fa += "#سیب_ممنوعه"
+
         if media.file_size < 50:
             tz = " "
             if "Bölüm 2" in m:
@@ -23,10 +33,11 @@ async def caption(client, message: Message):
                 tz += "پنجم"
 ‌‌‌‌‌‌‌            if "Bölüm 6" in m:
                 tz += "ششم"
-   
-        await message.edit(f"⬇️ تیزر{tz} قسمت {E}
+            V = m.split("Bölüm")[0]
+            Y = V.split()
+            
+            await message.edit(f"⬇️ تیزر{tz} قسمت {E} بازیرنویس چسبیده \n🆔👉 @dlmacvin_new")
         if N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
-            fa = " "
             if '720P' in m:
                 Q = '720'
             if '480P' in m:
@@ -87,16 +98,6 @@ async def caption(client, message: Message):
                 T = O.split()[0]
                 E = '9' + f"{T}"
                 n = N.split("E9")[0]
-        
-            if "Sen Cal Kapimi" in n:
-                fa += "#تو_در_خانه_ام_را_بزن"
-
-            if "Marasli" in n:
-                fa += "#اهل_ماراش"
-
-            if "Sibe Mamnooe" in n:
-                fa += "#سیب_ممنوعه"
-
             if not "Hard-Sub" in N:
                 H = fa.replace("_", " ").replace("#", " ")
                 await message.edit(f"🔺{H} قسمت {E} \n🔸 دوبله فارسی {q} \n🆔👉 @dlmacvin_new | {fa}")
