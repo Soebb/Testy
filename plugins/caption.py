@@ -13,6 +13,7 @@ async def caption(client, message: Message):
         fa = " "
         X = " "
         tz = " "
+
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
             X += "Sen Cal Kapimi"
@@ -23,7 +24,7 @@ async def caption(client, message: Message):
             fa += "#سیب_ممنوعه"
             X += "Sibe Mamnooe"
 
-        if Z.__contains__("Fragman"):
+        if media.file_size < 50:
             Jn = m.split("Bolum")[1]
             if "2" in Jn:
                 tz += "#دوم"
