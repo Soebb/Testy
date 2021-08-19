@@ -9,6 +9,7 @@ async def caption(client, message: Message):
         m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ").replace("ı", "i").replace("İ", "I").replace("ö", "o").replace("Ö", "O").replace("Ü", "U").replace("ü", "u").replace("ë", "e").replace("Ë", "E").replace("Ä", "A").replace("ç", "c").replace("Ç", "C").replace("ş", "s").replace("Ş", "S").replace("ğ", "g").replace("Ğ", "G").replace("ä", "a")
         D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ").replace("E320", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
+        Z = media.file_name
         fa = " "
         X = " "
         if "Sen Cal Kapimi" in m:
@@ -21,9 +22,8 @@ async def caption(client, message: Message):
             fa += "#سیب_ممنوعه"
             X += "Sibe Mamnooe"
 
-        if media.file_size < 50:
+        if Z.__contains__("Fragman"):
             tz = " "
-            Z = media.file_name
             if Z.__contains__("m 2"):
                 tz += "دوم"
             if Z.__contains__("m 1"):
