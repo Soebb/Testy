@@ -1,6 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
+import requests
 
 @Client.on_message(filters.media & filters.channel)
 async def caption(client, message: Message):
@@ -133,7 +134,13 @@ async def caption(client, message: Message):
             if not W in D:
                 P = m.split("0P")[0]
                 f = P.replace("72", " ").replace("48", " ").replace("108", " ").replace("24", " ")
-                YR = f"\n👌سال :"
+                API = "https://api.sumanjay.cf/watch/query="
+                movie = API + f"{f}"
+                r = requests.get(movie)
+                movies = r.json()
+                # for move in movies:
+                Yt = movies['release_date']
+                YR = f"\n👌سال : {Yt}"
             if '720P' in m:
                 Q = '720'
             if '480P' in m:
