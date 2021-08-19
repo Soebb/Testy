@@ -42,7 +42,8 @@ async def caption(client, message: Message):
                 E = V.split(f"{X}", -1)[0]
             else:
                 E = " "
-            await message.edit(f"⬇️ تیزر{tz} قسمت {E} {f} بازیرنویس چسبیده \n🆔👉 @dlmacvin_new")
+            Tzz = tz.replace("#", " ")
+            await message.edit(f"⬇️ تیزر{Tzz} قسمت {E} {fa} بازیرنویس چسبیده\n🆔👉 @dlmacvin_new")
         if N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if '720P' in m:
                 Q = '720'
@@ -124,7 +125,6 @@ async def caption(client, message: Message):
                 YR = f"\n👌سال: {Y}"
             W = "20" or "19"
             if not W in D:
-                Y = " "
                 P = m.split("0P")[0]
                 f = P.replace("72", " ").replace("48", " ").replace("108", " ").replace("24", " ")
                 YR = f"\n👌سال:"
@@ -139,4 +139,4 @@ async def caption(client, message: Message):
             if Q:
                 G = f"\n🔹کیفیت: {Q}"
                 q = G.replace(".1", " ").replace(".mkv", " ")
-            await message.edit(f"♨️فیلم ({f} {Y}) بازیرنویس چسبیده {YR} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+            await message.edit(f"♨️ فیلم ({f}) بازیرنویس چسبیده{YR} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
