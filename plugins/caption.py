@@ -6,10 +6,25 @@ from pyrogram.errors import FloodWait
 async def caption(client, message: Message):
     media = message.video or message.document
     if (media is not None) and (media.file_name is not None):
-        m = media.file_name
+        m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ")
         D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
-        if media.file_size 50:
+        if media.file_size < 50:
+            tz = " "
+            if "Bölüm 2" in m:
+                tz += "دوم"
+            if "Bölüm 1" in m:
+                tz += "اول"
+            if "Bölüm 3" in m:
+                tz += "سوم"
+            if "Bölüm 4" in m:
+                tz += "چهارم"
+            if "Bölüm 5" in m:
+                tz += "پنجم"
+‌‌‌‌‌‌‌            if "Bölüm 6" in m:
+                tz += "ششم"
+   
+        await message.edit(f"⬇️ تیزر{tz} قسمت {E}
         if N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             fa = " "
             if '720P' in m:
