@@ -40,7 +40,7 @@ async def caption(client, message: Message):
                 tz += "#ششم"
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") or X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 V = m.split("Bolum")[0]
-                E = V.split(f"{X}", -1)[0]
+                E = V.split(f"{X}", -1)
             else:
                 E = " "
             Tzz = tz.replace("#", " ")
