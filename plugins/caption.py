@@ -2,6 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 import requests
+import json
 
 @Client.on_message(filters.media & filters.channel)
 async def caption(client, message: Message):
