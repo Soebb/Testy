@@ -12,6 +12,7 @@ async def caption(client, message: Message):
         Z = media.file_name
         fa = " "
         X = " "
+        tz = " "
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
             X += "Sen Cal Kapimi"
@@ -23,18 +24,18 @@ async def caption(client, message: Message):
             X += "Sibe Mamnooe"
 
         if Z.__contains__("Fragman"):
-            tz = " "
-            if Z.__contains__("m 2"):
+            Jn = m.split("Bolum")[1]
+            if "2" in Jn:
                 tz += "دوم"
-            if Z.__contains__("m 1"):
+            if "1" in Jn:
                 tz += "اول"
-            if Z.__contains__("m 3"):
+            if "3" in Jn:
                 tz += "سوم"
-            if Z.__contains__("m 4"):
+            if "4" in Jn:
                 tz += "چهارم"
-            if Z.__contains__("m 5"):
+            if "5" in Jn:
                 tz += "پنجم"
-‌‌‌‌‌‌‌            if Z.__contains__("m 6"):
+‌‌‌‌‌‌‌            if "6" in Jn:
                 tz += "ششم"
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 V = m.split("Bolum")[0]
