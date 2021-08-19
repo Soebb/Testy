@@ -24,7 +24,7 @@ async def caption(client, message: Message):
             fa += "#سیب_ممنوعه"
             X += "Sibe Mamnooe"
 
-        if media.file_size < 50:
+        if Z.__contains__("Fragman"):
             Jn = m.split("Bolum")[1]
             if "2" in Jn:
                 tz += "#دوم"
