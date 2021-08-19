@@ -27,13 +27,13 @@ async def caption(client, message: Message):
             Jn = m.split("Bolum")[1]
             if "2" in Jn:
                 tz += "دوم"
-            if "1" in Jn:
+            elif "1" in Jn:
                 tz += "اول"
-            if "3" in Jn:
+            elif "3" in Jn:
                 tz += "سوم"
-            if "4" in Jn:
+            elif "4" in Jn:
                 tz += "چهارم"
-            if "5" in Jn:
+            elif "5" in Jn:
                 tz += "پنجم"
 ‌‌‌‌‌‌‌        
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
