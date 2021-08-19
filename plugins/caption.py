@@ -23,19 +23,19 @@ async def caption(client, message: Message):
             X += "Sibe Mamnooe"
 
         if media.file_size < 50:
-            if "Bolum 2" in m:
+            if "Bolum 2" in N:
                 tz += "دوم"
-            if "Bolum 1" in m:
+            if "Bolum 1" in N:
                 tz += "اول"
-            if "Bolum 3" in m:
+            if "Bolum 3" in N:
                 tz += "سوم"
-            if "Bolum 4" in m:
+            if "Bolum 4" in N:
                 tz += "چهارم"
-            if "Bolum 5" in m:
+            if "Bolum 5" in N:
                 tz += "پنجم"
-‌‌‌‌‌‌‌            if "Bolum 6" in m:
+‌‌‌‌‌‌‌            if "Bolum 6" in N:
                 tz += "ششم"
-            if not "X" == " ":
+            if not X == " ":
                 V = m.split("Bolum")[0]
                 E = V.split(f"{X}", -1)[0]
             else:
