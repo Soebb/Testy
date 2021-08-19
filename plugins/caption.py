@@ -11,6 +11,7 @@ async def caption(client, message: Message):
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
         fa = " "
         X = " "
+        tz = " "
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
             X += "Sen Cal Kapimi"
@@ -22,7 +23,6 @@ async def caption(client, message: Message):
             X += "Sibe Mamnooe"
 
         if media.file_size < 50:
-            tz = " "
             if "Bolum 2" in m:
                 tz += "دوم"
             if "Bolum 1" in m:
