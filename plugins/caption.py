@@ -6,7 +6,7 @@ from pyrogram.errors import FloodWait
 async def caption(client, message: Message):
     media = message.video or message.document
     if (media is not None) and (media.file_name is not None):
-        m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ").replace("ı", "i").replace("İ", ").replace("ö", "o").replace("Ö", "O").replace("Ü", "U").replace("ü", "u")
+        m = media.file_name.replace("Fragmanı", " ").replace("Fragmanlarım", " ").replace("ı", "i").replace("İ", "I").replace("ö", "o").replace("Ö", "O").replace("Ü", "U").replace("ü", "u").replace("ë", "e").replace("Ë", "E").replace("Ä", "A").replace("ç", "c").replace("Ç", "C").replace("ä", "a")
         D = m.replace("720P", " ").replace("E20", " ").replace("E120", " ").replace("E220", " ").replace("E320", " ")
         N = m.replace("@dlmacvin2 -", " ").replace("@dlmacvin -", " ")
         fa = " "
@@ -20,6 +20,7 @@ async def caption(client, message: Message):
         if "Sibe Mamnooe" in m:
             fa += "#سیب_ممنوعه"
             X += "Sibe Mamnooe"
+
         if media.file_size < 50:
             tz = " "
             if "Bolum 2" in m:
