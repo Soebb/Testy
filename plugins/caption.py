@@ -139,9 +139,9 @@ async def caption(client, message: Message):
                 movie = API + f"{f}"
                 r = requests.get(movie)
                 movies = r.json()
-                # for move in movies:
-                Yt = movies['release_date'][0]
-                YR = f"\n👌سال : {Yt}"
+                for movi in movies:
+                    Yt = movi['release_date']
+                    YR = f"\n👌سال : {Yt}"
             if '720P' in m:
                 Q = '720'
             if '480P' in m:
