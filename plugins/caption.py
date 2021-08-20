@@ -140,7 +140,7 @@ async def caption(client, message: Message):
                 r = requests.get(movie)
                 movies = r.json()
                 # for move in movies:
-                Yt = movies['release_date']
+                Yt = movies['release_date'][0]
                 YR = f"\n👌سال : {Yt}"
             if '720P' in m:
                 Q = '720'
